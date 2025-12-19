@@ -42,14 +42,16 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-10  lg:gap-20">
-      <HeroSection />
-      <AboutSection />
-      <ProductCategories />
-      <WhyChooseUs />
-      <ManufacturingSection />
-      <MarketsSection />
-      <CTASection />
-    </main>
+    <section className="flex flex-col lg:gap-20">
+      <main className="flex flex-col gap-10  lg:gap-20">
+        <HeroSection />
+        <AboutSection />
+        <ProductCategories />
+        <WhyChooseUs />
+        <ManufacturingSection />
+        <MarketsSection />
+      </main>
+        <CTASection />
+    </section>
   );
 }

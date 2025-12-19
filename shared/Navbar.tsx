@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, memo } from "react";
+import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -19,12 +20,19 @@ const navItems = [
 
 function Navbar() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (href: string) =>
+    pathname === href || (href !== "/" && pathname.startsWith(href));
+
+  const activeClass =
+    "font-semibold bg-linear-to-r from-[#00019A] to-blue-600 bg-clip-text text-transparent";
 
   return (
-    <header className="fixed top-2  lg:top-4 z-50 w-full px-4">
+    <header className="fixed top-2 lg:top-4 z-50 w-full px-4">
       <div
         className="mx-auto bg-white flex px-2 lg:px-4 h-14 lg:h-16 max-w-7xl items-center justify-between rounded-2xl 
-border border-white/20   backdrop-blur-xl 
+border border-white/20 backdrop-blur-xl 
 shadow-[0_0_20px_rgba(0,0,0,0.08)]"
       >
         <Link href="/" className="flex items-center">
@@ -43,7 +51,12 @@ shadow-[0_0_20px_rgba(0,0,0,0.08)]"
             <Link
               key={item.name}
               href={item.href}
-              className="group relative text-sm font-medium text-gray-700 transition-colors hover:text-[#00019A]"
+              className={`group relative text-sm font-medium transition-colors
+                ${
+                  isActive(item.href)
+                    ? activeClass
+                    : "text-gray-700 hover:text-[#00019A]"
+                }`}
             >
               {item.name}
               <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-linear-to-r from-blue-600 to-blue-400 transition-all group-hover:w-full" />
@@ -54,7 +67,7 @@ shadow-[0_0_20px_rgba(0,0,0,0.08)]"
         <div className="flex items-center gap-3">
           <Button
             variant="outline"
-            className="hidden border-blue-600 cursor-pointer text-[#00019A] transition-all hover:bg-blue-600 hover:text-white md:flex"
+            className="hidden border-blue-600 cursor-pointer text-[#00019A] transition-all hover:bg-[#00019A] hover:text-white md:flex"
           >
             Get Quote
           </Button>
@@ -71,19 +84,16 @@ shadow-[0_0_20px_rgba(0,0,0,0.08)]"
               </Button>
             </SheetTrigger>
 
-            <SheetContent side="right" className="rounded-l-2xl">
+            <SheetContent side="left" className="w-[320px] rounded-r-2xl px-5">
               <div className="flex flex-col gap-8 pt-6">
                 <div className="flex items-center gap-3">
                   <Image
-                    src="/fujian.jpg"
+                    src="/fujian.svg"
                     alt="Fujian Accessories CO. Ltd."
                     width={34}
                     height={34}
-                    className="rounded-lg"
+                    className="rounded-lg w-24"
                   />
-                  <span className="text-sm font-semibold text-blue-800">
-                    Fujian Accessories
-                  </span>
                 </div>
 
                 <nav className="flex flex-col gap-5">
@@ -92,14 +102,19 @@ shadow-[0_0_20px_rgba(0,0,0,0.08)]"
                       key={item.name}
                       href={item.href}
                       onClick={() => setOpen(false)}
-                      className="text-sm font-medium text-gray-700 transition-colors hover:text-[#00019A]"
+                      className={`text-sm transition-colors
+                        ${
+                          isActive(item.href)
+                            ? activeClass
+                            : "text-gray-700 hover:text-[#00019A]"
+                        }`}
                     >
                       {item.name}
                     </Link>
                   ))}
                 </nav>
 
-                <Button className="bg-[#00019A] text-white hover:bg-blue-800">
+                <Button className="bg-[#00019A] text-white hover:bg-[#00019A]">
                   Get a Quote
                 </Button>
               </div>

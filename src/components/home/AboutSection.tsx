@@ -20,19 +20,19 @@ function AboutSection() {
           />
         </div>
 
-        <div className="flex flex-col justify-center gap-6">
+        <div className="flex flex-col justify-center gap-3 lg:gap-6">
           <span className="w-fit rounded-full border border-blue-200 bg-blue-50 px-4 py-1 text-xs font-medium text-[#00019A]">
             About Our Company
           </span>
 
-          <h2 className="text-3xl font-bold leading-tight tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-xl lg:text-3xl font-semibold lg:font-bold leading-tight tracking-tight text-gray-900 sm:text-4xl">
             Reliable Partner for
             <span className="block text-[#00019A]">
               Garment Accessories Manufacturing
             </span>
           </h2>
 
-          <p className="max-w-xl text-base leading-relaxed text-gray-600">
+          <p className="max-w-xl text-sm lg:text-base leading-relaxed text-gray-600">
             Fujian Accessories CO. Ltd. is a professional manufacturer
             specializing in garment accessories including buttons, zippers,
             labels, and custom trims. With years of factory experience, we serve

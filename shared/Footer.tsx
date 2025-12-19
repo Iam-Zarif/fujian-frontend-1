@@ -27,7 +27,7 @@ function Footer() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col justify-center items-center lg:items-start gap-3">
             <h3 className="text-sm font-semibold text-[#00019A]">Company</h3>
             <Link
               href="/about"
@@ -55,7 +55,7 @@ function Footer() {
             </Link>
           </div>
 
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3 items-center lg:items-start">
             <h3 className="text-sm font-semibold text-[#00019A]">Products</h3>
             <Link
               href="/products/buttons"
@@ -83,7 +83,7 @@ function Footer() {
             </Link>
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 items-center lg:items-start">
             <h3 className="text-sm font-semibold text-[#00019A]">Contact</h3>
 
             <div className="flex items-start gap-3 text-sm text-[#00019A]/80">

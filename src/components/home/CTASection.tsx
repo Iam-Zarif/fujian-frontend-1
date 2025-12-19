@@ -16,14 +16,14 @@ function CTASection() {
           <div className="pointer-events-none absolute inset-0 rounded-3xl bg-linear-to-b from-white/25 via-transparent to-transparent" />
 
           <div className="relative mx-auto flex max-w-3xl flex-col items-center gap-6 text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            <h2 className="text-xl lg:text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Ready to Start Your
               <span className="block text-white">
                 Next Manufacturing Project?
               </span>
             </h2>
 
-            <p className="max-w-2xl text-base leading-relaxed text-white/90">
+            <p className="max-w-2xl lg:text-base leading-relaxed text-white/90">
               Contact Fujian Accessories CO. Ltd. today to receive competitive
               pricing, fast lead times, and reliable garment accessory
               manufacturing solutions.

@@ -14,19 +14,19 @@ function HeroSection() {
       <div className="absolute inset-0 -z-10 bg-linear-to-b from-blue-50 via-white to-white" />
 
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 lg:gap-12 px-4 md:grid-cols-2 md:gap-16 md:px-6">
-        <div className="order-2 flex flex-col justify-center gap-6 md:order-1">
+        <div className="order-2 flex flex-col justify-center gap-3 lg:gap-6 md:order-1">
           <span className="w-fit rounded-full border border-blue-200 bg-blue-50 px-4 py-1 text-xs font-medium text-[#00019A]">
             Trusted Garment Accessories Manufacturer
           </span>
 
           <h1 className="text-3xl font-bold leading-tight tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
             Fujian Accessories CO. Ltd.
-            <span className="block text-[#00019A]">
+            <span className="block lg:text-3xl text-xl text-[#00019A]">
               Professional Garment Accessories Manufacturer
             </span>
           </h1>
 
-          <p className="max-w-xl text-base leading-relaxed text-gray-600">
+          <p className="max-w-xl text-sm lg:text-base leading-relaxed text-gray-600">
             We manufacture high-quality buttons, zippers, labels, and custom
             garment accessories for global fashion brands with strict quality
             control and factory-direct pricing.

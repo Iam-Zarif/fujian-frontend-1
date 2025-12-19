@@ -24,8 +24,8 @@ function FloatingContact() {
         href="https://wa.me/XXXXXXXXXX"
         target="_blank"
         aria-label="WhatsApp"
-        className="relative flex h-10 lg:w-12 w-10 lg:h-12  items-center justify-center rounded-2xl 
-        bg-white/70 backdrop-blur-xl 
+        className="relative flex h-10 lg:w-12 w-10 lg:h-12 bg-white  items-center justify-center rounded-2xl 
+         backdrop-blur-xl 
         ring-1 ring-black/5
         shadow-[0_6px_16px_rgba(0,0,0,0.14)]
         transition-all hover:-translate-y-0.5"

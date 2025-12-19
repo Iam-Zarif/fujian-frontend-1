@@ -3,6 +3,30 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #00019a rgba(0, 1, 154, 0.15);
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(0, 1, 154, 0.12);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #00019a;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 1, 154, 0.15);
+}
+
+
+
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -123,3 +147,5 @@
     @apply bg-background text-foreground;
   }
 }
+
+

@@ -37,9 +37,9 @@ function ProductCategories() {
   );
 
   return (
-    <section className="relative  lg:">
+    <section className="relative ">
       <div className="mx-auto max-w-7xl px-4 md:px-6">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-3 lg:gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map((item) => (
             <Link
               key={item.title}
