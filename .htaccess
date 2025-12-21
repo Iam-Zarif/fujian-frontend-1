@@ -1,17 +1,58 @@
-# Disable directory listing
-Options -Indexes
+# Enable Rewrite Engine
+RewriteEngine On
 
-# Set default file
-DirectoryIndex index.html
+# Handle React Router (SPA fallback)
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
 
-<IfModule mod_rewrite.c>
-  RewriteEngine On
+# If file or directory exists, serve it
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
 
-  # Allow existing files and folders
-  RewriteCond %{REQUEST_FILENAME} -f [OR]
-  RewriteCond %{REQUEST_FILENAME} -d
-  RewriteRule ^ - [L]
+# Otherwise, redirect everything to index.html
+RewriteRule ^ index.html [L]
 
-  # Redirect all other routes to React
-  RewriteRule ^ index.html [L]
+# ----------------------------
+# GZIP Compression
+# ----------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml
 </IfModule>
+
+# ----------------------------
+# Browser Caching
+# ----------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+# ----------------------------
+# Security Headers
+# ----------------------------
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-XSS-Protection "1; mode=block"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ----------------------------
+# Disable directory listing
+# ----------------------------
+Options -Indexes
