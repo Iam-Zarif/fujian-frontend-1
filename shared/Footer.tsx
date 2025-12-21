@@ -7,10 +7,10 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 function Footer() {
   return (
-    <footer className="relative mt-8 overflow-hidden bg-white">
+    <footer className="relative mt-8 border border-[#00019A]/10 overflow-hidden bg-white">
       <div className="absolute inset-0 -z-10 bg-linear-to-b from-[#00019A]/5 via-white to-white" />
 
-      <div className="mx-auto max-w-7xl px-4 py-4 md:px-6">
+      <div className="mx-auto max-w-7xl px-4 py-4 lg:pt-10 md:px-6">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
           <div className="flex flex-col gap-4">
             <Image

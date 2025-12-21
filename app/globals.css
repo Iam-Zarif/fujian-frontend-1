@@ -3,7 +3,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Firefox */
 * {
   scrollbar-width: thin;
   scrollbar-color: #00019a rgba(0, 1, 154, 0.15);

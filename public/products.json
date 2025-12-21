@@ -1,0 +1,203 @@
+[
+  {
+    "slug": "woven-label",
+    "name": "Woven Label",
+    "category": "Trims",
+    "code": "08",
+    "images": {
+      "cover": "/products/wovenLabel.webp",
+      "primary": "/products/wovenLabel.webp",
+      "secondary": "/products/wovenLabel.webp"
+    },
+    "capacity": {
+      "daily": "400,000 pcs/day"
+    },
+    "machines": [
+      { "name": "Jacquard Woven Label Machine", "count": 12 },
+      { "name": "Cutting & Folding Machine", "count": 1 },
+      { "name": "Ultrasonic Slitting Machine", "count": 10 }
+    ],
+    "description": {
+      "short": "Premium woven labels produced with high-precision jacquard looms.",
+      "long": "Our woven labels are manufactured using advanced jacquard weaving technology, delivering excellent durability, color accuracy, and refined texture. Ideal for premium garments, export-quality apparel, and global fashion brands. Strict quality control is maintained throughout weaving, cutting, and folding."
+    }
+  },
+  {
+    "slug": "printed-label",
+    "name": "Printed Label",
+    "category": "Trims",
+    "code": "07",
+    "images": {
+      "cover": "/products/printedLabel.webp",
+      "primary": "/products/printedLabel.webp",
+      "secondary": "/products/printedLabel.webp"
+    },
+    "capacity": {
+      "daily": "2,000,000 pcs/day"
+    },
+    "machines": [
+      { "name": "Flexographic Printing Machine", "count": 12 },
+      { "name": "Screen Printing Machine", "count": 1 },
+      { "name": "Label Cutting & Folding Machine", "count": 10 }
+    ],
+    "description": {
+      "short": "Cost-effective printed labels for high-volume garment production.",
+      "long": "Printed labels are produced using flexographic and screen printing technologies, ensuring sharp text, durable ink adhesion, and consistent quality. Suitable for care labels, size labels, and branding applications with fast turnaround."
+    }
+  },
+  {
+    "slug": "offset-printing-back-board",
+    "name": "Offset Printing & Back Board",
+    "category": "Packaging",
+    "code": "15",
+    "images": {
+      "cover": "/products/offsetPrinting.jpg",
+      "primary": "/products/offsetPrinting.jpg",
+      "secondary": "/products/offsetPrinting.jpg"
+    },
+    "capacity": {
+      "daily": "500,000 pcs/day"
+    },
+    "machines": [
+      { "name": "Offset Printing Machine", "count": 4 },
+      { "name": "Die Cutting Machine", "count": 2 }
+    ],
+    "description": {
+      "short": "High-resolution offset printed tags and back boards.",
+      "long": "Offset printing ensures precise color reproduction and premium finishing for garment tags and packaging boards. Our facility supports bulk orders with strict color consistency and finishing inspection."
+    }
+  },
+  {
+    "slug": "heat-transfer-print",
+    "name": "Heat Transfer Print",
+    "category": "Trims",
+    "code": "11",
+    "images": {
+      "cover": "/products/heatTransfer.png",
+      "primary": "/products/heatTransfer.png",
+      "secondary": "/products/heatTransfer.png"
+    },
+    "capacity": {
+      "daily": "300,000 pcs/day"
+    },
+    "machines": [{ "name": "Heat Transfer Printing Machine", "count": 6 }],
+    "description": {
+      "short": "Durable heat transfer prints for performance and fashion wear.",
+      "long": "Heat transfer printing delivers excellent stretch resistance, wash durability, and flexibility. Ideal for sportswear, activewear, and high-wear garments."
+    }
+  },
+  {
+    "slug": "twill-tape",
+    "name": "Twill Tape",
+    "category": "Trims",
+    "code": "09",
+    "images": {
+      "cover": "/products/twilltape.webp",
+      "primary": "/products/twilltape.webp",
+      "secondary": "/products/twilltape.webp"
+    },
+    "capacity": {
+      "daily": "600,000 meters/day"
+    },
+    "machines": [{ "name": "Narrow Fabric Loom", "count": 10 }],
+    "description": {
+      "short": "High-strength twill tapes for reinforcement and decoration.",
+      "long": "Manufactured using durable yarns and controlled weaving processes, our twill tapes ensure consistent strength, uniform texture, and long-term performance."
+    }
+  },
+  {
+    "slug": "drawstring-drawcord",
+    "name": "Drawstring & Drawcord",
+    "category": "Accessories",
+    "code": "12",
+    "images": {
+      "cover": "/products/custom.avif",
+      "primary": "/products/custom.avif",
+      "secondary": "/products/custom.avif"
+    },
+    "capacity": {
+      "daily": "250,000 pcs/day"
+    },
+    "machines": [{ "name": "Braiding Machine", "count": 8 }],
+    "description": {
+      "short": "Custom drawstrings and drawcords for casual and sportswear.",
+      "long": "Available in cotton, polyester, and blended materials, with customizable colors, tips, and finishes to meet brand-specific requirements."
+    }
+  },
+  {
+    "slug": "elastic",
+    "name": "Elastic (Normal, Woven & Jacquard)",
+    "category": "Trims",
+    "code": "10",
+    "images": {
+      "cover": "/products/elastic.jpeg",
+      "primary": "/products/elastic.jpeg",
+      "secondary": "/products/elastic.jpeg"
+    },
+    "capacity": {
+      "daily": "700,000 meters/day"
+    },
+    "machines": [{ "name": "Elastic Weaving Machine", "count": 14 }],
+    "description": {
+      "short": "High-recovery elastic bands for garment applications.",
+      "long": "Manufactured with controlled stretch and recovery properties, ensuring comfort, durability, and long-lasting performance for waistbands and activewear."
+    }
+  },
+  {
+    "slug": "rubber-silicone-patch",
+    "name": "Rubber & Silicone Patch",
+    "category": "Patches",
+    "code": "13",
+    "images": {
+      "cover": "/products/rubber.webp",
+      "primary": "/products/rubber.webp",
+      "secondary": "/products/rubber.webp"
+    },
+    "capacity": {
+      "daily": "120,000 pcs/day"
+    },
+    "machines": [{ "name": "Silicone Injection Machine", "count": 5 }],
+    "description": {
+      "short": "3D rubber and silicone patches for modern branding.",
+      "long": "These patches offer excellent flexibility, durability, and a premium 3D appearance, widely used in outerwear and sports apparel."
+    }
+  },
+  {
+    "slug": "leather-patch",
+    "name": "Leather Patch",
+    "category": "Patches",
+    "code": "14",
+    "images": {
+      "cover": "/products/leather.webp",
+      "primary": "/products/leather.webp",
+      "secondary": "/products/leather.webp"
+    },
+    "capacity": {
+      "daily": "80,000 pcs/day"
+    },
+    "machines": [{ "name": "Leather Embossing Machine", "count": 4 }],
+    "description": {
+      "short": "Embossed genuine and synthetic leather patches.",
+      "long": "Crafted using precision embossing and finishing processes, leather patches provide premium branding solutions for denim and fashion garments."
+    }
+  },
+  {
+    "slug": "gum-tape",
+    "name": "Gum Tape (Clear & Printed)",
+    "category": "Packaging",
+    "code": "16",
+    "images": {
+      "cover": "/products/gumTape.png",
+      "primary": "/products/gumTape.png",
+      "secondary": "/products/gumTape.png"
+    },
+    "capacity": {
+      "daily": "1,000,000 meters/day"
+    },
+    "machines": [{ "name": "Adhesive Coating Machine", "count": 6 }],
+    "description": {
+      "short": "High-adhesion gum tapes for secure packaging.",
+      "long": "Designed for export packaging and logistics, our gum tapes ensure strong adhesion, durability, and consistent performance."
+    }
+  }
+]
