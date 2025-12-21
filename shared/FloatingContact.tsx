@@ -1,5 +1,6 @@
 "use client";
 
+
 import { memo } from "react";
 import Link from "next/link";
 import { PhoneCall, Mail } from "lucide-react";
