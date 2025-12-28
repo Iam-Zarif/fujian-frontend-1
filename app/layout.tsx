@@ -39,6 +39,7 @@ export const metadata: Metadata = {
         height: 630,
         alt: "Fujian Accessories CO. Ltd.",
       },
+      
     ],
     type: "website",
   },
