@@ -29,7 +29,7 @@ function Navbar() {
     "font-semibold bg-linear-to-r from-[#00019A] to-blue-600 bg-clip-text text-transparent";
 
   return (
-    <header className="fixed top-2 lg:top-4 z-50 w-full px-4">
+    <header className="fixed top-2  z-50 w-full px-4">
       <div
         className="mx-auto bg-white flex px-2 lg:px-4 h-14 lg:h-16 max-w-7xl items-center justify-between rounded-2xl 
 border border-white/20 backdrop-blur-xl 

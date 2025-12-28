@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     "zippers manufacturer",
     "custom clothing accessories",
     "China accessories factory",
+    "faclbangladesh",
+    "faclbangla",
+    "faclbangladesh.com",
   ],
   openGraph: {
     title: "Fujian Accessories CO. Ltd.",
